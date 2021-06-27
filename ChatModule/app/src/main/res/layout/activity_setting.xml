@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:background="@color/blue"
+        >
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/white"
+            android:text="Edit Profile"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_width="@dimen/_40sdp"
+            android:background="@drawable/round_black_shape"
+            app:tint="@color/white"
+            android:src="@drawable/ic_baseline_done_24"
+            android:padding="@dimen/_5sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:id="@+id/save"/>
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_gravity="center"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_width="@dimen/_70sdp"
+        android:src="@drawable/profile"
+        android:id="@+id/setting_image"
+        app:civ_border_width="@dimen/_2sdp"
+        app:civ_border_color="@color/blue"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"/>
+
+    <EditText
+        android:gravity="start"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/edtprofile_shape"
+        android:textSize="@dimen/_14sdp"
+        android:text="User Name"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:padding="@dimen/_10sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:id="@+id/setting_name"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:gravity="start"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/edtprofile_shape"
+        android:textSize="@dimen/_10sdp"
+        android:text="hey there i'm using this chat app\nWanna try this?"
+        android:padding="@dimen/_10sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:id="@+id/setting_status"
+        android:textStyle="normal"/>
+</LinearLayout>
